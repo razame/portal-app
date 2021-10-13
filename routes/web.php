@@ -18,7 +18,7 @@ use \App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('getLogin');
 });
 
 Route::get('/register', [RegisterController::class, 'showRegisterPage'])->name('getRegister');
